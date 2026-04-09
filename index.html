@@ -1,0 +1,25 @@
+<!--
+  index.html dosyası satır satır açıklamalı
+-->
+<!DOCTYPE html> <!-- HTML5 doctype bildirimi -->
+<html lang="en"> <!-- Sayfa dili İngilizce (isteğe bağlı Türkçe yapılabilir) -->
+<head>
+    <meta charset="UTF-8"> <!-- Karakter kodlaması UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyumlu görünüm -->
+    <title>Document</title> <!-- Sekme başlığı -->
+    <link rel="stylesheet" href="style.css"> <!-- Harici CSS dosyası bağlantısı -->
+    
+</head>
+<body>
+    <div id="score"></div> <!-- Skorun gösterileceği alan -->
+    <div id="kills"></div> <!-- Öldürme sayısının gösterileceği alan -->
+    <div id="start" class="panel"> <!-- Başlangıç paneli -->
+        <h2>Top Savaşı Oyunu</h2> <!-- Oyun başlığı -->
+        <p>Düşmanları Yok Et!</p> <!-- Oyun açıklaması -->
+        <button onclick="init()">BAŞLA</button> <!-- Oyunu başlatan buton -->
+    </div>
+    <canvas id="canvas"></canvas> <!-- Oyun alanı (canvas) -->
+    <audio id="ciuv-audio" src="assets/ciuv.wav" preload="auto"></audio> <!-- Tıklama sesi -->
+    <script src="main.js"></script> <!-- Oyun mantığı JS dosyası -->
+</body>
+</html>

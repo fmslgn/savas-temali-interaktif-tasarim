@@ -1,0 +1,71 @@
+/*
+  style.css dosyası satır satır açıklamalı
+*/
+*{
+    margin: 0; /* Tüm kenar boşluklarını sıfırla */
+    padding: 0; /* Tüm iç boşlukları sıfırla */
+    box-sizing: border-box; /* Kutu modeli ayarı */
+    font-family: Arial, Helvetica, sans-serif; /* Yazı tipi */
+    user-select: none; /* Metin seçimini engelle */
+}
+body{
+    height: 100vh; /* Tam ekran yükseklik */
+    background: black; /* Arka plan rengi siyah */
+    overflow: hidden; /* Scrollbar'ları gizle */
+}
+.hidden{
+    display: none !important; /* Gizli sınıfı */
+}
+canvas{
+    cursor: crosshair; /* Nişangah imleci */
+}
+div#score{
+    position: absolute; /* Mutlak konum */
+    top: 0; /* Üstten hizala */
+    left: 0; /* Soldan hizala */
+    padding: 1rem; /* İç boşluk */
+    color: white; /* Yazı rengi */
+    font-size: 1.5rem; /* Yazı boyutu */
+    user-select: none; /* Seçilemez */
+    z-index: 2; /* Üstte tut */
+}
+div#kills{
+    position: absolute; /* Mutlak konum */
+    top: 60px; /* Üstten 60px aşağıda (daha fazla boşluk) */
+    left: 0; /* Soldan hizala */
+    padding: 1rem; /* İç boşluk */
+    color: white; /* Yazı rengi */
+    font-size: 1.5rem; /* Yazı boyutu */
+    user-select: none; /* Seçilemez */
+    z-index: 2; /* Üstte tut */
+}
+.panel{
+    background: white; /* Panel arka planı */
+    position: absolute; /* Mutlak konum */
+    padding: 2rem; /* İç boşluk */
+    border-radius: 0.5rem; /* Köşe yuvarlatma */
+    transform: translate(-50%,-50%); /* Ortala */
+    top: 50%; /* Dikey ortala */
+    left: 50%; /* Yatay ortala */
+    display: flex; /* Esnek kutu */
+    flex-direction: column; /* Dikey hizalama */
+    justify-content: center; /* Ortala */
+    align-items: center; /* Ortala */
+}
+
+.panel h2{
+    color: red; /* Başlık rengi */
+}
+.panel p{
+    color: #444; /* Açıklama rengi */
+    margin: 2rem; /* Dış boşluk */
+}
+.panel button{
+    border: none; /* Kenarlık yok */
+    background: green; /* Arka plan yeşil */
+    color: white; /* Yazı rengi */
+    padding:0.5rem 1.5rem; /* İç boşluk */
+    font-size: 1.3rem; /* Yazı boyutu */
+    border-radius: 0.5rem; /* Köşe yuvarlatma */
+    outline: none; /* Odak çizgisi yok */
+}
